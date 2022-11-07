@@ -46,15 +46,6 @@ contract Madicine {
         uint Status
     );
 
-    /// @notice
-    /// @dev Create new Madicine Batch by Manufacturer
-    /// @param Manu Manufacturer Ethereum Network Address
-    /// @param Des Description of Madicine Batch
-    /// @param RM RawMatrials for Madicine
-    /// @param Quant Number of units
-    /// @param Shpr Transporter Ethereum Network Address
-    /// @param Rcvr Receiver Ethereum Network Address
-    /// @param RcvrType Receiver Type either Wholesaler(1) or Distributer(2)
     constructor(
         address Manu,
         bytes32 Des,
@@ -107,18 +98,12 @@ contract Madicine {
         );
     }
 
-    /// @notice
-    /// @dev Get Madicine Batch Transaction Status
-    /// @return Madicine Transaction Status
     function getBatchIDStatus() public view returns(
         uint
     ) {
         return uint(status);
     }
 
-    /// @notice
-    /// @dev Pick Madicine Batch by Associate Transporter
-    /// @param shpr Transporter Ethereum Network Address
     function pickPackage(
         address shpr
     ) public {
@@ -140,9 +125,6 @@ contract Madicine {
         }
     }
 
-    /// @notice
-    /// @dev Received Madicine Batch by Associated Wholesaler or Distributer
-    /// @param Rcvr Wholesaler or Distributer
     function receivedPackage(
         address Rcvr
     ) public
@@ -170,10 +152,7 @@ contract Madicine {
         }
     }
 
-    /// @notice
-    /// @dev Update Madicine Batch transaction Status(Pick) in between Wholesaler and Distributer
-    /// @param receiver Distributer Ethereum Network Address
-    /// @param sender Wholesaler Ethereum Network Address
+
     function sendWD(
         address receiver,
         address sender
@@ -186,9 +165,6 @@ contract Madicine {
         status = madicineStatus(2);
     }
 
-    /// @notice
-    /// @dev Update Madicine Batch transaction Status(Recieved) in between Wholesaler and Distributer
-    /// @param receiver Distributer
     function recievedWD(
         address receiver
     ) public {
@@ -199,10 +175,6 @@ contract Madicine {
         status = madicineStatus(4);
     }
 
-    /// @notice
-    /// @dev Update Madicine Batch transaction Status(Pick) in between Distributer and Pharma
-    /// @param receiver Pharma Ethereum Network Address
-    /// @param sender Distributer Ethereum Network Address
     function sendDP(
         address receiver,
         address sender
@@ -215,9 +187,6 @@ contract Madicine {
         status = madicineStatus(5);
     }
 
-    /// @notice
-    /// @dev Update Madicine Batch transaction Status(Recieved) in between Distributer and Pharma
-    /// @param receiver Pharma Ethereum Network Address
     function recievedDP(
         address receiver
     ) public {
