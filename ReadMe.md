@@ -52,7 +52,7 @@ A pharmaceutical supply chain is a sequence of activities and processes to bring
 ---
 - Solidity (Ethereum Smart Contract Language)
 - Metamask (Ethereum wallet)
-- Ropsten test network ( We usde Ropsten faucet to get ethers on the Ropsten test network)
+- Ropsten test network ( We used Ropsten faucet to get ethers on the Ropsten test network)
 - Truffle
 - Infura
 - Web3JS
