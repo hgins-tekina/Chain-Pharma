@@ -18,9 +18,18 @@
         z-index: 99999;
 
     }
+    table, th, td {
+     border:1px solid black;}
 
     .navs {
         position: relative !important;
+    }
+    tr:nth-child(even) {
+     background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    th:nth-child(even),td:nth-child(even) {
+     background-color: rgba(150, 212, 212, 0.4);
     }
 
     @media (max-width:1100px) {
@@ -65,15 +74,14 @@
         <div class="transparent-container1">
             <div class="bg_text_wrapper">
                 <div class="bg-text-container">
-                    <h2>Track Your Air Cargo Shipments by Air waybill</h2>
-                    <p>Air cargo tracking British Airways, Virgin Atlantic, DHL Aviation, China Cargo Airlines, Air
-                        China, Air France.</p>
-                    <p>Lufthansa, Turkish Airlines, Emirates SkyCargo, Cathay Pacific</p>
+                    <h2>Track Your Medicine Shipments</h2>
+                    <p>All over the World<p>
+                    <p></p>
                 </div>
 
                 <form class="bg-input-container">
-                    <input type="text" placeholder="Enter tracking number">
-                    <button>  Submit</button>
+                    <input type="text" placeholder="Enter BatchID of Medicine">
+                    <button>    Submit    </button>
                 </form>
             </div>
 
@@ -83,10 +91,68 @@
 
     <div class="how-it-works-general-container">
         <h1>How it works</h1>
-        <p>Air cargo numbers have the format 123-12345678</p>
+        <p>BatchID numbers of the format DU-1234567Z</p>
         <ol id="ol">
-            <li>1.Track information starts with He12346xxxx</li>
+            <li>1.Track information starts with DU-1234567Z</li>
             <li>2. Enter your tracking information and click submit</li>
+            <li>3. You recieve Block Number, BLock Location, </li>
+            <p> <center><table class="ui definition table" data-reactid="47" style:15px>
+                <tbody class="" data-reactid="48">
+                    <tr class="positive" data-reactid="49">
+                        <td style="text-transform:capitalize;" rowspan="40" class=""
+                            data-reactid="50"> </td>
+                        <td class="" data-reactid="51">0</td>
+                        <td class="" data-reactid="52">address  </td>
+                        <td class="" data-reactid="53"><code data-reactid="54">Manu</code></td>
+                        <td class="" data-reactid="55"></td>
+                    </tr>
+                    <tr class="positive" data-reactid="56">
+                        <td style="display:none;" class="1" data-reactid="57"> </td>
+                        <td class="" data-reactid="65">2</td>
+                        <td class="" data-reactid="59">bytes32  </td>
+                        <td class="" data-reactid="60"><code data-reactid="61">Des  </code></td>
+                        <td class="" data-reactid="62"></td>
+                    </tr>
+                    <tr class="positive" data-reactid="63">
+                        <td style="display:none;" class="" data-reactid="64"> </td>
+                        <td class="" data-reactid="65">2</td>
+                        <td class="" data-reactid="66">bytes32  </td>
+                        <td class="" data-reactid="67"><code data-reactid="68">RM   </code></td>
+                        <td class="" data-reactid="69"></td>
+                    </tr>
+                    <tr class="positive" data-reactid="70">
+                        <td style="display:none;" class="" data-reactid="71"> </td>
+                        <td class="" data-reactid="72">3</td>
+                        <td class="" data-reactid="73">uint256  </td>
+                        <td class="" data-reactid="74"><code data-reactid="75">Quant    </code></td>
+                        <td class="" data-reactid="76"></td>
+                    </tr>
+                    <tr class="positive" data-reactid="77">
+                        <td style="display:none;" class="" data-reactid="78"> </td>
+                        <td class="" data-reactid="79">4</td>
+                        <td class="" data-reactid="80">address  </td>
+                        <td class="" data-reactid="81"><code data-reactid="82">Shpr </code></td>
+                        <td class="" data-reactid="83"></td>
+                    </tr>
+                    <tr class="positive" data-reactid="84">
+                        <td style="display:none;" class="" data-reactid="85"> </td>
+                        <td class="" data-reactid="86">5</td>
+                        <td class="" data-reactid="87">address  </td>
+                        <td class="" data-reactid="88"><code data-reactid="89">Rcvr     </code></td>
+                        <td class="" data-reactid="90"></td>
+                    </tr>
+                    <tr class="positive" data-reactid="91">
+                        <td style="display:none;" class="" data-reactid="92"> </td>
+                        <td class="" data-reactid="93">6</td>
+                        <td class="" data-reactid="94">uint256  </td>
+                        <td class="" data-reactid="95"><code data-reactid="96">RcvrType </code>
+                        </td>
+                        <td class="" data-reactid="97"></td>
+                    </tr>
+                </tbody>
+            </table></center></p>
+        </div>
+        
            
 
         </ol>
@@ -151,8 +217,8 @@
                     <div class="galler">
                         <h2>Reach Us</h2>
                         <div class="links">
-                            <a href="">hello@heylogistics.co</a>
-                            <a href="tel: +23 ">+234 904 560 4669</a>
+                            <a href="">hello@TripleN.co</a>
+                            <a href="tel: +23 ">+1236969</a>
                             <div class="social_link">
                                 <h2>Connect on Socials</h2>
                                 <div class="social_icon">
@@ -170,11 +236,10 @@
             </div>
             <div class="policy_container">
                 <span>Privacy Policy </span>
-                <span>© 2021 HeyLogistics</span>
+                <span>© 2022 Triple N</span>
             </div>
             <div class="hel" style="border: 1px solid rgba(211, 211, 211, 0.11); width:100%"></div>
-            <p class="last">All trucking services are provided by HEY Logistics is a licensed property. All transactions
-                are subject to our terms of service.</p>
+            <p class="last">We track Medicine using Blockchain.</p>
         </div>
     </div>
     <!-- =================== END OF FOOTER SECTION================ -->
