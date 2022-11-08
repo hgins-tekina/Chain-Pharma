@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./logics css/signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="signup-nav">
+
+        <div class="auto1">
+
+            <div class="nav-img-cont">
+                <a href="index.html"><img src="./images/heynigeria logo.png" alt=""></a>
+            </div>
+
+            <div class="signup-btn-container">
+                <a href="faqs.html"><button>FAQs</button></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="main-signup-general-container">
+
+
+        <div class="section-main-signup-container">
+
+            <div class="left2-sign-in-container form2 none1 display1">
+                <div class="left2-img-container">
+                    <img src="./images/Sign-In Page.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="left1-container display2 none2" style="height: 620px">
+                <div class="left1-img-container">
+                    <img src="./images/Sign-Up page (1).jpg" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="right1-container">
+                <div class="general-signUp-and-signIn">
+                    <h1 class="none3 display3">Register!</h1>
+                    <div class="sign-in-and-signup-div">
+                        <p onclick="signinFunction('display1','click','Sign In')" id="click" class="active"><a href="signIn.html" style="color: black; text-decoration:none">SIGN IN</a></p>
+                        <p onclick="signinFunction('display2','click2','Register')" id="click2" class="active">SIGN UP
+                        </p>
+                    </div>
+                </div>
+                <!-- ======================================== SIGN UP FORM ============================================= -->
+                <!-- <form id="form2"  class="display1 none1">
+                    <label class="lbl1">Email address</label><br>
+                    <input type="email">
+                    <label class="lbl1">Password</label><br>
+                    <input type="password"><br><br>
+
+                    <button id="signin-btn">SIGN IN</button><br><br><br>
+                    <label for="check1" class="spec1" style="font-size: 15px; margin: 0 0">forget <a href=""
+                            style="color: #095ED7;">password</a></label><br><br>
+                   
+                </form> -->
+                <!-- ======================================== END OF SIGN UP FORM ============================================= -->
+                <!-- ======================= LOGIN FORM ======================================= -->
+                <form id="form1" class="display2 none2 " >
+
+                    <label>Name<span id="star1">*</span></label> <br>
+                    <input type="text"><br>
+
+                    <label>Phone Number<span id="star1">*</span></label><br>
+                    <input type="text"><br>
+
+                    <label>Email address <span id="star1">*</span></label> <br>
+                    <input type="email"><br>
+
+                    <label>Password <span id="star1">*</span></label><br>
+                    <input type="password"><br>
+
+                    <label>Confirm Password <span id="star1">*</span></label><br>
+                    <input type="password"><br>
+
+                    <label>Referal Code</label><br>
+                    <input type="text">
+
+                    <button id="signUp1-btn">Sign UP</button>
+                    <p id="agrement1">By signing up, you agree to our <a href="T & c.html"> Terms & Condition</a> and <a
+                            href="#">privacy policy</a></p>
+                    =
+                </form>
+                <!-- ======================== END OF LOGIN FORM =========================== -->
+
+
+            </div>
+        </div>
+
+    </div>
+    <style>
+        @media(max-width:750px) {
+
+            .left1-container {
+                display: none !important;
+            }
+
+            .left2-sign-in-container {
+                display: none !important;
+            }
+
+            .right1-container {
+                width: 95% !important;
+            }
+        }
+    </style>
+
+    <script>
+        var regId = document.getElementById("regId")
+        function signinFunction(a, b) {
+            var m = document.getElementsByClassName('none1')
+            var n = document.getElementsByClassName('none2')
+            var none3 = document.getElementsByClassName('none3')[0]
+            var none4 = document.getElementsByClassName('none4')[0]
+            var display4 = document.getElementsByClassName('display4')[0]
+            var display3 = document.getElementsByClassName('display3')[0]
+            var a = document.getElementsByClassName(a)
+            var active = document.getElementsByClassName('active')
+
+
+
+            for (var i = 0; i < m.length; i++) {
+                m[i].style.display = 'none'
+                n[i].style.display = 'none'
+                active[i].style.border = 'none'
+            }
+
+
+            for (var i = 0; i < a.length; i++) {
+                a[i].style.display = 'block'
+               
+            }
+            document.getElementById(b).style.borderBottom = '4px solid #5FC8FF'
+
+
+        }
+
+        document.getElementById('click2').click()
+
+    </script>
+</body>
+
+</html>

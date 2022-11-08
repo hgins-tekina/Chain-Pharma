@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./logics css/signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="signup-nav">
+
+        <div class="auto1">
+
+            <div class="nav-img-cont">
+                <a href="index.html"><img src="./images/heynigeria logo.png" alt=""></a>
+            </div>
+
+            <div class="signup-btn-container">
+                <a href="faqs.html"><button>FAQs</button></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="main-signup-general-container">
+
+
+        <div class="section-main-signup-container">
+
+            <div class="left2-sign-in-container form2 none1 display1">
+                <div class="left2-img-container">
+                    <img src="./images/Sign-In Page.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="left1-container display2 none2" style="height: 620px">
+                <div class="left1-img-container">
+                    <img src="./images/Sign-Up page (1).jpg" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="right1-container">
+                <div class="general-signUp-and-signIn">
+                    <h1 class="none3 display3">Log IN!</h1>
+                    <div class="sign-in-and-signup-div">
+                        <p onclick="signinFunction('display1','click')" id="click" class="active">SIGN IN</p>
+                        <p onclick="signinFunction('display2','click2')" id="click2" class="active"><a href="sign_up.html" style="text-decoration: none; color:black">SIGN UP</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- ======================================== SIGN UP FORM ============================================= -->
+                <form id="form2"  class="">
+                    <label class="lbl1">Email address</label><br>
+                    <input type="email">
+                    <label class="lbl1">Password</label><br>
+                    <input type="password"><br><br>
+
+                    <button id="signin-btn">SIGN IN</button><br><br><br>
+                    <label for="check1" class="spec1" style="font-size: 15px; margin: 0 0">forget <a href=""
+                            style="color: #095ED7;">password</a></label><br><br>
+                    
+                </form>
+              
+
+            </div>
+        </div>
+
+    </div>
+    <style>
+        @media(max-width:750px) {
+
+            .left1-container {
+                display: none !important;
+            }
+
+            .left2-sign-in-container {
+                display: none !important;
+            }
+
+            .right1-container {
+                width: 95% !important;
+            }
+        }
+    </style>
+
+    <script>
+        var regId = document.getElementById("regId")
+        function signinFunction(a, b) {
+            var m = document.getElementsByClassName('none1')
+            var n = document.getElementsByClassName('none2')
+            var none3 = document.getElementsByClassName('none3')[0]
+            var none4 = document.getElementsByClassName('none4')[0]
+            var display4 = document.getElementsByClassName('display4')[0]
+            var display3 = document.getElementsByClassName('display3')[0]
+            var a = document.getElementsByClassName(a)
+            var active = document.getElementsByClassName('active')
+
+
+
+            for (var i = 0; i < m.length; i++) {
+                m[i].style.display = 'none'
+                n[i].style.display = 'none'
+                active[i].style.border = 'none'
+                //   none3.style.display='none'
+            }
+
+
+            for (var i = 0; i < a.length; i++) {
+                a[i].style.display = 'block'
+                //    display3.style.display = 'block'
+                // 
+            }
+            // none3.innerHTML = c
+            document.getElementById(b).style.borderBottom = '4px solid #5FC8FF'
+
+
+        }
+
+        document.getElementById('click').click()
+
+    </script>
+</body>
+
+</html>

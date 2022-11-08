@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./logics css/index.css">
+</head>
+
+<body>
+
+        <!-- =================== HEADER SECTION ================ -->
+        <div class="header_container">
+            <div class="header_flex">
+                <div class="header_text">Login and start ordering now.
+                </div>
+                <div class="header_text">Login and start ordering now.
+                </div>
+                <div class="header_text">Login and start ordering now.
+                </div>
+                <div class="cancel">&times;</div>
+            </div>
+    
+        </div>
+        <!-- ================ END OF HEADER SECTION ======== -->
+
+    <!-- =================== LANDING PAGE SECTION ================ -->
+    <div class="landing_container">
+        <div class="landing_buttons">
+            <div onclick="mySliderButton(0)" class="slidebtn"></div>
+            <div onclick="mySliderButton(1)" class="slidebtn"></div>
+            <div onclick="mySliderButton(2)" class="slidebtn"> </div>
+        </div>
+        <div class="navs">
+            <div class="dropdown">
+                <button onclick="closeNav(event)">X</button>
+                <a href="signIn.html">LOGIN</a>
+                <a href="https://github.com/hgins-tekina/Chain-Pharma">ABOUT US</a>
+                <a href="track.html">TRACK ORDER</a>
+            </div>
+            <div class="nav_margin">
+                <button class="open" onclick="myOpen(event)">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div class="nav_img"> <a href="index.html"><img src="./images/heynigeria logo.png" alt=""></a></div>
+
+                <nav id="navContent">
+                    <a href="#" onclick="openMenu(event)"> Menus</a>
+                    <a href="sign_up.html"> SignUp</a>
+                    <!-- <a href=""> <button>Shop</button> </a> -->
+                    <button class="destory" onclick="myDestory(event)">&times;</button>
+                </nav>
+            </div>
+        </div>
+        <div class="slider_container">
+            <div class="slider_long">
+
+                <div class="slider_item slider_change">
+                    <div class="slider_content slider_content1">
+                        <h2>The Future of Pharma</h2>
+                        <h2>at Your Finger Tip.</h2>
+
+                        <div class="country_container">
+                            <span>Air cargo</span>
+                            <span>Ocean cargo</span>
+                            <span>Land cargo</span>
+                        </div>
+                        <div class="butt"><a href="signIn.html"><button>Ship with us</button></a></div>
+                    </div>
+
+                </div>
+
+                <div class="slider_item slider_item2">
+                    <div class="transparent_2 "></div>
+                    <div class="slide_margin">
+                        <div class="content1">
+                            <h2> Shop from any E-Commerce Pharma</h2>
+                            <h2> Stores present in 10+ countries.</h2>
+                            <div class="account_row">
+                                <button><a href="sign_up.html">Create account</a> </button>
+                                <button><a href="signIn.html">Speak with us</a></button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+                <div class="slider_item slider_item3">
+                    <div class="transparent3"></div>
+
+                    <div class="slider_content slider_change2">
+                        <h2>We Use Blockchain to ship ,track, verify</h2>
+                        <h2>your Medicines world wide.</h2>
+                        <h2>at minimum cost and utmost security</h2>
+
+                        <div class="country_container country_container1">
+                            <span>Safe</span>
+                            <span>Swift</span>
+                            <span>Smiles</span>
+                        </div>
+
+                        <div class="butt"> <a href="signIn.html"><button>Ship with us</button></a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================== END OF LANDING PAGE SECTION ================ -->
+
+    <!-- =================== OUR SERVICE CONTAINER================ -->
+    <div class="our_service_container">
+        <div class="our_service_margin">
+            <div class="marin_section">
+                <div class="Service_item  Service_item1">
+                    <h2 style="margin-bottom: 25px">Our Service</h2>
+                </div>
+                <div class="Service_item">
+                    <div class="item_content box">
+                        <div class="title"> Accuracy</div>
+                        <div class="titel_content1">
+                            <p>We provide accurate information across the entire
+                                chain at any point and at any location.
+                            </p>
+                        </div>
+
+                        <p style="font-weight: bold"> Access</p>
+
+                        <div class="title_content2">
+                            <p>Instant access to real-time updates and
+                                alerts if issues are detected.
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="item_content box">
+                        <div class="title"> Traceability and visibility</div>
+                        <div class="titel_content1">
+                            <p> Know the real-time location of your shipment anytime, anywhere.</p>
+                        </div>
+
+                        <p style="font-weight: bold">E-Commerce Shopping</p>
+
+                        <div class="title_content2">
+                            <p>
+                                Buy directly from Pharma Stores and experience fast delivery to your home or office
+                                address. Authenticity at it's best.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section_margin section_margin2">
+                <div class="marginImg"><img src="./images/truck.png" alt=""></div>
+
+                <div class="call_location">
+                    <div class="wrap_call_location box">
+                        <div class="call  box">
+                            <p><i class="fa fa-phone" aria-hidden="true"></i> Call Center</p>
+                            <p>+234 706 194 1204</p>
+                            <p>+234 706 194 1204</p>
+                        </div>
+
+                        <div class="location box">
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Our Locations</p>
+                            <p>USA, UK</p>
+                            <p>CHINA</p>
+                            <p>INDIA</p>
+                        </div>
+                    </div>
+                    <div class="hour_quote box">
+                        <div class="workinng_hours box">
+                            <p>Working Hours</p>
+                            <p>Mon-Friday (9am-5pm)</p>
+                            <p>Saturday (11am-3pm</p>
+                        </div>
+
+                        <div class="quote box">
+                            <p>Get a Quote</p>
+                            <img src="./images/quote.svg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ===================END OF  OUR SERVICE CONTAINER================ -->
+
+    <!-- =================== WHAT TO KNOW CONTAINER================ -->
+    <div class="ThingstoKnown_container">
+        <div class="thingsimg"><img src="./images/FAQ.png" alt=""></div>
+        <div class="things_margin">
+            <div class="headings">
+                <h1>What to know before getting started. F.A.Q</h1>
+                <p>Here are some of the most common questions we get from first-time customers.</p>
+            </div>
+
+            <div class="things_item">
+                <h2>1. I would like to know about your services.</h2>
+                <p>We ship and deliver prescription drugs all over the world.
+                </p>
+            </div>
+            <div class="things_item">
+                <h2>2. How safe is PharmaChain?</h2>
+                <p>We use a blockchain to track, supply, and verify our shipments starting from the 
+                    manufacturer right down to delivery.</p>
+            </div>
+            <div class="things_item">
+                <h2>3. Can i ship medicines using ChainPharma from USA/UK to India ?</h2>
+                <p>Yes we ship all kinds of medicines, using our shipping services in USA, UK or China, we
+                    have a flat fee rate for Hamzat.</p>
+            </div>
+            <div class="things_item">
+                <h2>4. How can I access the tracker data?</h2>
+                <p>When you order a shipment using our website, you'll get a payment confirmation message
+                    along with a tracking and originality validation link.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- =================== END OF WHAT TO KNOW CONTAINER ================ -->
+
+    <!-- =================== WHY CHOOSE US CONTAINER================ -->
+    <div class="why_choose_container">
+        <div class="why_choose_margin">
+            <div class="why_choose_item">
+                <h1>Why Choose Us?</h1>
+                <!-- <p>Enjoy the Benefits of using HEY services for your business, discover Top Global Brands..</p> -->
+            </div>
+            <div class="why_choose_item why_choose_item2">
+                <div class="chooseimg"><img src="./images/HERO iPhone X Clay.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- =================== END OF WHY CHOOSE US CONTAINER================ -->
+
+    <!-- =================== STUCK CONTAINER================ -->
+    <div class="stuck_container">
+        <div class="stuck_margin">
+
+            <div class="responsive">
+                <div class="gallery">
+                    <div class="gaimg"><img src="./images/comment.svg" alt=""></div>
+                    <div class="sub">SMART SHOPPING</div>
+                    <p>
+                        Using our services as a shopping address in the United States of America or the United Kingdom,
+                        you can shop from multiple e-commerce stores without restriction.from Amazon, Ebay, HEY, Argos,
+                        Zara, Alibaba, Walmart, Tesco and the rest through a single platform that connects all of your
+                        favorite brands together.
+                    </p>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <div class="gaimg"><img src="./images/copy.svg" alt=""></div>
+                    <div class="sub">REAL TIME TRACKING</div>
+                    <p>Track and consolidate your packages in batches or ship them directly to their final destination
+                        using our real-time tracking system to monitor and follow your packages as they arrive at your
+                        designated door step.</p>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <div class="gaimg"><img src="./images/lightning.svg" alt=""></div>
+                    <div class="sub">FAST DELIVERY</div>
+                    <p>Experience Express Delivery [EED] when you move things from Point A to Point B using
+                        HEY-Logistics Shipping Processes.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ===================END OF STUCK CONTAINER================ -->
+
+    
+
+        </div>
+    </div>
+    </div>
+
+    <!-- =================== FOOTER SECTION================ -->
+    <div class="footer_main">
+        <footer>
+
+            <div class="footer_margin">
+                <div class="footer_content ">
+                    <div class="content">
+
+                        <div class="heading">
+                            <h2>Reach Us</h2>
+                            <p>Fill up the form and our Team will get back to you within 24 hours.</p>
+                        </div>
+
+                        <div class="avatar"><img src="./images/reach_us.png" alt=""></div>
+
+                        <div class="contact_info">
+                            <p> <img src="./images/sms.svg" alt=""> <span>hello@chainpharma.com</span></p>
+
+                            <p> <img src="./images/call.svg" alt=""> <span>+234 907 906 8463</span></p>
+
+                            <p> <img src="./images/location.svg" alt=""> <span>VIT Chennai</span></p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <form action="">
+                            <div class="inpu"><input type="text" name="" id=""> <label for="">Your Name</label></div>
+
+                            <div class="inpu"><input type="email" name="" id=""> <label for="">Email Address</label>
+                            </div>
+
+                            <div class="inpu"><input type="text" name="" id=""> <label for="">Phone Number</label></div>
+
+                            <div class="inpu textareaLabel"><textarea name="" id="" cols="30" rows="10"></textarea>
+                                <label for=""> Your Message</label>
+                            </div>
+                            <div class="send"> <button>Send Message</button></div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </footer>
+        <div class="lin"></div>
+
+        <div class="footer_link">
+            <div class="footer_link_margin">
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Product</h2>
+                        <div class="links">
+                            <a href="">Get Medicine</a>
+                            <a href="">e-Commerce</a>
+                            <a href="">Personal Shopper</a>
+                            <a href="">API</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Resources</h2>
+                        <div class="links">
+                            <a href="">Explore us</a>
+                            <a href="">Blogs</a>
+                            <a href="">Afillate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Company</h2>
+                        <div class="links">
+                            <a href="">People</a>
+                            <a href="">Career</a>
+                            <a href="">Terms of service</a>
+                            <a href="">Partners</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Get Our App</h2>
+                        <div class="links">
+                            <a href=""><img src="./images/Store.png" alt=""></a>
+                            <a href=""><img src="./images/Store2.png" alt=""></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Reach Us</h2>
+                        <div class="links">
+                            <a href="">hello@chainpharma.com</a>
+                            <a href="tel: +23 ">+234 907 906 8463</a>
+                            <div class="social_link">
+                                <h2>Connect on Socials</h2>
+                                <div class="social_icon">
+                                    <a href="facebook.com"><img src="./images/Facebook.svg" alt=""></a>
+                                    <a href="twitter.com"><img src="./images/Twitter.svg" alt=""></a>
+                                    <a href="instagram.com"><img src="./images/Instagram.svg" alt=""></a>
+                                    <a href="linkedIn.com"><img src="./images/LinkedIn.svg" alt=""></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="policy_container">
+                <span>Privacy Policy </span>
+                <span>© 2022 Chainpharma</span>
+            </div>
+            <div class="hel" style="border: 1px solid rgba(211, 211, 211, 0.11); width:100%"></div>
+        </div>
+    </div>
+    <!-- =================== END OF FOOTER SECTION================ -->
+
+
+
+</body>
+<script src="./scripts/index.js"></script>
+<script>
+    function openMenu(a) {
+        var navCon = document.querySelector(".dropdown");
+        var navMain1 = a.target.parentElement;
+        console.log(navMain1);
+        console.log(navCon, "navcon")
+        if (!navCon.classList.contains("increase")) {
+            navCon.classList.add("increase")
+        }
+        if (navMain1.classList.contains("hello")) {
+            navMain1.classList.remove("hello")
+        }
+
+    }
+
+    function closeNav(a) {
+        var navCon = document.querySelector(".dropdown");
+        console.log(navCon);
+
+        if (navCon.classList.contains("increase")) {
+
+            navCon.classList.remove("increase")
+        }
+    }
+
+    function myOpen(a) {
+        var navMain = document.querySelector("#navContent")
+        var navCon = document.querySelector(".dropdown");
+        navMain.classList.toggle("hello")
+        if (navCon.classList.contains("increase")) {
+            navCon.classList.remove("increase")
+        }
+    }
+
+    function myDestory(a) {
+        var navMain = a.target.parentElement
+        if (navMain.classList.contains("hello")) {
+            navMain.classList.remove("hello")
+        }
+
+    }
+</script>
+
+</html>

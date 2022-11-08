@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./logics css/track.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./logics css/index.css">
+</head>
+<style>
+     
+    .dropfaq {
+        position: absolute;
+        top: 65px !important;
+        z-index: 99999;
+
+    }
+
+    .navs {
+        position: relative !important;
+    }
+
+    @media (max-width:1100px) {
+        .navsupport {
+            position: absolute;
+            top: 65px !important;
+        }
+    }
+</style>
+
+<body>
+    <div class="navs">
+        <div class="dropdown">
+            <button onclick="closeNav(event)">X</button>
+            <a href="signIn.html">LOGIN</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="faqs.html">FAQS</a>
+            <a href="track.html">TRACK ORDER</a>
+            <a href="blog.html">BLOG</a>
+        </div>
+        <div class="nav_margin">
+            <button class="open" onclick="myOpen(event)">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="nav_img"> <a href="index.html"><img src="./images/heynigeria logo.png" alt=""></a></div>
+
+            <nav id="navContent">
+                <a href="#" onclick="openMenu(event)"> Menus</a>
+                <a href="signIn.html"> SignUp</a>
+                <!-- <a href=""> <button>Shop</button> </a> -->
+                <button class="destory" onclick="myDestory(event)">&times;</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="background-image-general-container">
+
+
+        <img src="./images/Freight Rates _ Wholesale Merchandise Supplier, Premier Wholesaler.jpg" alt="" id="img1">
+        <div class="transparent-container1">
+            <div class="bg_text_wrapper">
+                <div class="bg-text-container">
+                    <h2>Track Your Air Cargo Shipments by Air waybill</h2>
+                    <p>Air cargo tracking British Airways, Virgin Atlantic, DHL Aviation, China Cargo Airlines, Air
+                        China, Air France.</p>
+                    <p>Lufthansa, Turkish Airlines, Emirates SkyCargo, Cathay Pacific</p>
+                </div>
+
+                <form class="bg-input-container">
+                    <input type="text" placeholder="Enter tracking number">
+                    <button>  Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="how-it-works-general-container">
+        <h1>How it works</h1>
+        <p>Air cargo numbers have the format 123-12345678</p>
+        <ol id="ol">
+            <li>1.Track information starts with He12346xxxx</li>
+            <li>2. Enter your tracking information and click submit</li>
+           
+
+        </ol>
+    </div>
+    <!-- =================== FOOTER SECTION================ -->
+
+    <div class="footer_main">
+
+        <div class="lin"></div>
+
+        <div class="footer_link">
+            <div class="footer_link_margin">
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Product</h2>
+                        <div class="links">
+                            <a href="">Air Cargo</a>
+                            <a href="">e-Commerce</a>
+                            <a href="">Personal Shopper</a>
+                            <a href="">API</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Resources</h2>
+                        <div class="links">
+                            <a href="">Explore us</a>
+                            <a href="">Blogs</a>
+                            <a href="">Afillate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Company</h2>
+                        <div class="links">
+                            <a href="">People</a>
+                            <a href="">Career</a>
+                            <a href="">Terms of service</a>
+                            <a href="">Partners</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Get Our App</h2>
+                        <div class="links">
+                            <a href=""><img src="./images/Store.png" alt=""></a>
+                            <a href=""><img src="./images/Store2.png" alt=""></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galler">
+                        <h2>Reach Us</h2>
+                        <div class="links">
+                            <a href="">hello@heylogistics.co</a>
+                            <a href="tel: +23 ">+234 904 560 4669</a>
+                            <div class="social_link">
+                                <h2>Connect on Socials</h2>
+                                <div class="social_icon">
+                                    <a href="facebook.com"><img src="./images/Facebook.svg" alt=""></a>
+                                    <a href="twitter.com"><img src="./images/Twitter.svg" alt=""></a>
+                                    <a href="instagram.com"><img src="./images/Instagram.svg" alt=""></a>
+                                    <a href="linkedIn.com"><img src="./images/LinkedIn.svg" alt=""></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="policy_container">
+                <span>Privacy Policy </span>
+                <span>© 2021 HeyLogistics</span>
+            </div>
+            <div class="hel" style="border: 1px solid rgba(211, 211, 211, 0.11); width:100%"></div>
+            <p class="last">All trucking services are provided by HEY Logistics is a licensed property. All transactions
+                are subject to our terms of service.</p>
+        </div>
+    </div>
+    <!-- =================== END OF FOOTER SECTION================ -->
+
+</body>
+<script>
+   function openMenu(a) {
+        var navCon = document.querySelector(".dropdown");
+        var navMain1 = a.target.parentElement;
+        console.log(navMain1);
+        console.log(navCon, "navcon")
+        if (!navCon.classList.contains("increase")) {
+            navCon.classList.add("increase")
+        }
+        if (navMain1.classList.contains("hello")) {
+            navMain1.classList.remove("hello")
+        }
+
+    }
+
+    function closeNav(a) {
+        var navCon = document.querySelector(".dropdown");
+        console.log(navCon);
+
+        if (navCon.classList.contains("increase")) {
+
+            navCon.classList.remove("increase")
+        }
+    }
+
+    function myOpen(a) {
+        var navMain = document.querySelector("#navContent")
+        var navCon = document.querySelector(".dropdown");
+        navMain.classList.toggle("hello")
+        if (navCon.classList.contains("increase")) {
+            navCon.classList.remove("increase")
+        }
+    }
+
+    function myDestory(a) {
+        var navMain = a.target.parentElement
+        if (navMain.classList.contains("hello")) {
+            navMain.classList.remove("hello")
+        }
+
+    }
+</script>
+
+</html>
